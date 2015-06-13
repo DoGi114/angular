@@ -1,0 +1,25 @@
+        <div class="container">
+            <table class="table table-striped table-condensed">
+                <thead>
+                    <tr>
+                        <th style="min-width: 80px;">ID</th>
+                        <th style="min-width: 80px;">Name</th>
+                        <th style="min-width: 80px;">Surname</th>
+                        <th style="min-width: 80px;">Position</th>
+                        <th style="width:20px;"> </th>
+                        <th style="width:20px;"> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="worker in workers">
+                        <td>{{ worker.id}}</td>
+                        <td>{{ worker.name}}</td>
+                        <td>{{ worker.surname}}</td>
+                        <td>{{ worker.position}}</td>
+                        <td><a ng-click="editWorker(worker.id)" class="btn btn-small btn-primary">edit</a></td>
+                        <td><a ng-click="deleteWorker(worker.id)" class="btn btn-small btn-danger">delete</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <a ng-click="createNewWorker()" class="btn btn-default btn-small">add</a>
+        </div>

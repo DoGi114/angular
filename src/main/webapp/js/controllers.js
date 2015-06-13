@@ -1,19 +1,19 @@
 /* global angular */
 
-var app = angular.module('BookAppControllers', []);
+var app = angular.module('WorkerAppControllers', []);
 
 app.controller('WorkerListCtrl', ['$scope', 'WorkersFactory', 'WorkerFactory', '$location',
     function ($scope, WorkersFactory, WorkerFactory, $location) {
 
         $scope.editWorker = function (workerId) {
-            $location.path('/Worker-detail/' + workerId);
+            $location.path('/worker-detail/' + workerId);
         };
 
         $scope.deleteWorker = function (workerId) {
-            WorkerFactory.delete({id: workerId});
+            WorkerFactory.delete1({id: workerId});
             $scope.workers = WorkersFactory.query();
             $scope.workers = WorkersFactory.query();
-            $location.path('/book-list')
+            $location.path('/worker-list')
         };
 
         $scope.createNewWorker = function () {

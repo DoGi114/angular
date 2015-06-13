@@ -1,7 +1,7 @@
 /* global angular */
 'use strict';
 
-var services = angular.module('BookAppServices', ['ngResource']);
+var services = angular.module('WorkerAppServices', ['ngResource']);
 
 services.factory('WorkersFactory', function ($resource) {
     return $resource('/Angular/rest/worker', {}, {
@@ -14,7 +14,7 @@ services.factory('WorkerFactory', function ($resource) {
     return $resource('/Angular/rest/worker/:id', {}, {
         show: { method: 'GET' },
         update: { method: 'PUT', params: {id: '@id'} },
-        delete: { method: 'DELETE', params: {id: '@id'} }
+        delete1: { method: 'DELETE', params: {id: '@id'} }
     });
 });
 

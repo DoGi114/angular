@@ -8,7 +8,8 @@ import javax.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
 public class WorkerManager {
-private final Map<UUID,Worker>  workers = new HashMap();
+	
+	private final Map<UUID,Worker>  workers = new HashMap();
     
     public void add(Worker worker){
         workers.put(worker.getId(),worker);

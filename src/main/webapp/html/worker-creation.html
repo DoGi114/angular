@@ -1,0 +1,34 @@
+<div class="container">
+    <h1>Add worker</h1>
+
+    <form novalidate="novalidate" class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="inputName">Name:</label>
+            <div class="controls">
+                <input type="text" id="inputName" ng-model="worker.name"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputSurname">Surname:</label>
+            <div class="controls">
+                <input type="text" id="inputSurname" ng-model="worker.surname"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputPosition">Position:</label>
+            <div class="controls">
+                <input type="text" id="inputPosition" ng-model="worker.position"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+              <!-- user-detail.html: -->
+
+
+              <!-- user-creation.html: -->
+                <br>
+                <a ng-click="createNewWorker()" class="btn btn-small btn-primary">add</a>
+            </div>
+        </div>
+    </form>
+</div>

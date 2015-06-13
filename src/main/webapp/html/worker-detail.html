@@ -1,0 +1,33 @@
+<div class="container">
+    <h1>Edit worker</h1>
+
+        <form novalidate="novalidate" class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="inputName">Name:</label>
+            <div class="controls">
+                <input type="text" id="inputName" ng-model="worker.name"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputSurname">Surname:</label>
+            <div class="controls">
+                <input type="text" id="inputSurname" ng-model="worker.surname"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputPosition">Position:</label>
+            <div class="controls">
+                <input type="text" id="inputPosition" ng-model="worker.position"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+              <!-- user-detail.html: -->
+                <a ng-click="cancel()" class="btn btn-small">cancel</a>
+                <a ng-click="updateWorker()" class="btn btn-small btn-primary">update worker</a>
+
+
+            </div>
+        </div>
+    </form>
+</div>

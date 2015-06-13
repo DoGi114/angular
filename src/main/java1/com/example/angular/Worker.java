@@ -11,18 +11,18 @@ public class Worker {
     private UUID id;
     private String name;
     private String surname;
-    private String pension;
+    private String position;
     
     public Worker() {
         this.id = UUID.randomUUID();
     }
 
-	public Worker(String name, String surname, String pension) {
+	public Worker(String name, String surname, String position) {
 		super();
 		this.id = UUID.randomUUID();
 		this.name = name;
 		this.surname = surname;
-		this.pension = pension;
+		this.position = position;
 	}
 
 	public UUID getId() {
@@ -49,11 +49,11 @@ public class Worker {
 		this.surname = surname;
 	}
 
-	public String getPension() {
-		return pension;
+	public String getposition() {
+		return position;
 	}
 
-	public void setPension(String pension) {
-		this.pension = pension;
+	public void setposition(String position) {
+		this.position = position;
 	}
 }
